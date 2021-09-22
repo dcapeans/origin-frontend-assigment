@@ -8,13 +8,30 @@
   ],
   "parser": "@typescript-eslint/parser",
   "rules": {
-    "react/prop-types": [0],
-    "react/react-in-jsx-scope": [0],
-    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "react/prop-types": [
+      0
+    ],
+    "react/react-in-jsx-scope": [
+      0
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
     "import/no-named-as-default": 0,
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "prettier/prettier": ["error", { "singleQuote": true }],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": false
+      }
+    ],
     "@typescript-eslint/explicit-member-accessibility": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-explicit-any": 1,
@@ -22,23 +39,34 @@
       "error",
       {
         "selector": "default",
-        "format": ["camelCase"],
+        "format": [
+          "camelCase"
+        ],
         "leadingUnderscore": "allow",
         "trailingUnderscore": "allow"
       },
       {
         "selector": "variable",
-        "format": ["camelCase", "UPPER_CASE"],
+        "format": [
+          "camelCase",
+          "UPPER_CASE",
+          "PascalCase"
+        ],
         "leadingUnderscore": "allow",
         "trailingUnderscore": "allow"
       },
       {
         "selector": "typeLike",
-        "format": ["PascalCase"]
+        "format": [
+          "PascalCase"
+        ]
       },
       {
         "selector": "function",
-        "format": ["PascalCase", "camelCase"]
+        "format": [
+          "PascalCase",
+          "camelCase"
+        ]
       }
     ]
   },
@@ -51,12 +79,21 @@
   "globals": {
     "document": false
   },
-  "plugins": ["react-hooks", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "settings": {
     "import/resolver": {
       "node": {
-        "paths": ["src"],
-        "extensions": [".ts", ".tsx"]
+        "paths": [
+          "src"
+        ],
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
       }
     },
     "react": {

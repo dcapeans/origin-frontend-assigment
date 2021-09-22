@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #F4F8FA;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
